@@ -68,3 +68,12 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      - name: Update Docker Hub description
+        uses: peter-evans/dockerhub-description@v4
+        with:
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_SECRET }}
+          repository: ${{ env.IMAGE_NAME }}
+          readme-filepath: ./overview.md
+          short-description: "A comprehensive MCP server exposing 70+ mathematical tools for AI assistants"
