@@ -8,7 +8,7 @@ package handlers
 import (
 	"testing"
 
-	"github.com/tejzpr/math-mcp-server/config"
+	"github.com/sagacient/math-mcp-server/config"
 
 	"github.com/mark3labs/mcp-go/server"
 	"github.com/stretchr/testify/assert"

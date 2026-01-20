@@ -7,7 +7,7 @@
 package handlers
 
 import (
-	"github.com/tejzpr/math-mcp-server/config"
+	"github.com/sagacient/math-mcp-server/config"
 
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"

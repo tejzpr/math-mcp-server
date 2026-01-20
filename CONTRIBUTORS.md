@@ -2,7 +2,7 @@
 
 ## Original Author
 
-- **Tejus Pratap** <tejzpr@gmail.com>
+- **Tejus Pratap** <sagacient@gmail.com>
 
 ## Contributors
 

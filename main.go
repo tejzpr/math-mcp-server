@@ -13,8 +13,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/tejzpr/math-mcp-server/config"
-	"github.com/tejzpr/math-mcp-server/handlers"
+	"github.com/sagacient/math-mcp-server/config"
+	"github.com/sagacient/math-mcp-server/handlers"
 
 	"github.com/mark3labs/mcp-go/server"
 )
