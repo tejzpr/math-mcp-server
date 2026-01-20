@@ -2,10 +2,10 @@
 
 A comprehensive mathematical operations MCP (Model Context Protocol) server written in Go. This server exposes 70+ mathematical tools that can be used by AI assistants and MCP-compatible clients.
 
-[![CI](https://github.com/Sagacient/math-mcp-server/actions/workflows/ci.yml/badge.svg)](https://github.com/Sagacient/math-mcp-server/actions/workflows/ci.yml)
-[![Docker](https://github.com/Sagacient/math-mcp-server/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/Sagacient/math-mcp-server/actions/workflows/docker-publish.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/Sagacient/math-mcp-server)](https://goreportcard.com/report/github.com/Sagacient/math-mcp-server)
-[![Docker Hub](https://img.shields.io/docker/v/Sagacient/math-mcp-server?label=Docker%20Hub)](https://hub.docker.com/r/Sagacient/math-mcp-server)
+[![CI](https://github.com/sagacient/math-mcp-server/actions/workflows/ci.yml/badge.svg)](https://github.com/sagacient/math-mcp-server/actions/workflows/ci.yml)
+[![Docker](https://github.com/sagacient/math-mcp-server/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/sagacient/math-mcp-server/actions/workflows/docker-publish.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/sagacient/math-mcp-server)](https://goreportcard.com/report/github.com/sagacient/math-mcp-server)
+[![Docker Hub](https://img.shields.io/docker/v/sagacient/math-mcp-server?label=Docker%20Hub)](https://hub.docker.com/r/sagacient/math-mcp-server)
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://mozilla.org/MPL/2.0/)
 
 ## Features
@@ -33,7 +33,7 @@ No installation needed! Configure your MCP client to run directly:
     "mcpServers": {
         "math": {
             "command": "go",
-            "args": ["run", "github.com/Sagacient/math-mcp-server@latest"],
+            "args": ["run", "github.com/sagacient/math-mcp-server@latest"],
             "env": {
                 "MATH_CATEGORIES": "all"
             }
@@ -45,7 +45,7 @@ No installation needed! Configure your MCP client to run directly:
 #### Option 2: Using `go install`
 
 ```bash
-go install github.com/Sagacient/math-mcp-server@latest
+go install github.com/sagacient/math-mcp-server@latest
 ```
 
 Then configure your MCP client:
@@ -66,7 +66,7 @@ Then configure your MCP client:
 #### Option 3: Build from source
 
 ```bash
-git clone https://github.com/Sagacient/math-mcp-server.git
+git clone https://github.com/sagacient/math-mcp-server.git
 cd math-mcp-server
 go build -o math-mcp-server .
 ```
@@ -134,7 +134,7 @@ docker run -i --rm \
     "mcpServers": {
         "math": {
             "command": "go",
-            "args": ["run", "github.com/Sagacient/math-mcp-server@latest"],
+            "args": ["run", "github.com/sagacient/math-mcp-server@latest"],
             "env": {
                 "MATH_CATEGORIES": "all"
             }
@@ -149,7 +149,7 @@ docker run -i --rm \
     "mcpServers": {
         "math": {
             "command": "go",
-            "args": ["run", "github.com/Sagacient/math-mcp-server@latest"],
+            "args": ["run", "github.com/sagacient/math-mcp-server@latest"],
             "env": {
                 "MATH_CATEGORIES": "arithmetic,trig,statistics"
             }
@@ -164,7 +164,7 @@ docker run -i --rm \
     "mcpServers": {
         "math": {
             "command": "go",
-            "args": ["run", "github.com/Sagacient/math-mcp-server@latest"],
+            "args": ["run", "github.com/sagacient/math-mcp-server@latest"],
             "env": {
                 "TRANSPORT": "http"
             }
@@ -394,7 +394,7 @@ Add to your Cursor MCP settings (`.cursor/mcp.json` or global settings):
     "mcpServers": {
         "math": {
             "command": "go",
-            "args": ["run", "github.com/Sagacient/math-mcp-server@latest"],
+            "args": ["run", "github.com/sagacient/math-mcp-server@latest"],
             "env": {
                 "MATH_CATEGORIES": "all"
             }
@@ -412,7 +412,7 @@ Add to your Claude Desktop config (`~/Library/Application Support/Claude/claude_
     "mcpServers": {
         "math": {
             "command": "go",
-            "args": ["run", "github.com/Sagacient/math-mcp-server@latest"],
+            "args": ["run", "github.com/sagacient/math-mcp-server@latest"],
             "env": {
                 "MATH_CATEGORIES": "all"
             }
@@ -426,13 +426,13 @@ Add to your Claude Desktop config (`~/Library/Application Support/Claude/claude_
 Start the server in HTTP mode:
 
 ```bash
-TRANSPORT=http go run github.com/Sagacient/math-mcp-server@latest
+TRANSPORT=http go run github.com/sagacient/math-mcp-server@latest
 ```
 
 Or with the flag:
 
 ```bash
-go run github.com/Sagacient/math-mcp-server@latest -t http
+go run github.com/sagacient/math-mcp-server@latest -t http
 ```
 
 The server will listen on `http://localhost:8080/mcp`.
